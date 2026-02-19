@@ -1,87 +1,90 @@
 **Machine Learning-Based Energy Consumption Forecasting in Smart Grids**
 
 This project focuses on predicting energy consumption in smart grid environments using Machine Learning techniques.
+
 The goal is to build accurate regression models that can forecast total energy usage based on environmental and temporal features such as temperature, humidity, date, time, weekend, and holidays.
 
-Accurate forecasting helps in:
+**Accurate forecasting helps in:**
 
-Load balancing
+  • Load balancing
 
-Energy optimization
+  • Energy optimization
 
-Renewable energy integration
+  • Renewable energy integration
 
-Cost reduction
+  • Cost reduction
 
-🛠️ Technologies Used
+**🛠️ Technologies Used**
 
-Python
+  • Python
 
-Pandas
+  • Pandas
 
-NumPy
+  • NumPy
 
-Scikit-learn
+  • Scikit-learn
 
-Matplotlib
+  • Matplotlib
 
-Seaborn
+  • Seaborn
 
-Feature Engine (Winsorizer)
+  • Feature Engine (Winsorizer)
 
-Joblib
+  • Joblib
 
-📊 Dataset Description
+**📊 Dataset Description**
 
-The dataset contains the following features:
+**The dataset contains the following features:**
 
-DateTime
+  • DateTime
+  
+  • Temperature (°F)
+  
+  • Humidity
+  
+  • Hour, Minute, Day, Month, Year
+  
+  • Weekend (0/1)
 
-Temperature (°F)
+  • Holiday (0/1)
+  
+  • TotalUsage (Target Variable)
+  
+  • Target Variable: Total Energy Consumption
 
-Humidity
+**⚙️ Project Workflow**
 
-Hour, Minute, Day, Month, Year
+  **Data Preprocessing**
+  
+  • Handling missing values
+  
+  • Outlier treatment using Winsorization
+  
+  • Feature scaling using StandardScaler
+  
+  • Feature selection using SelectKBest
+  
+  **Model Building**
+  
+  • Support Vector Regressor (SVR)
+  
+  • Random Forest Regressor
+  
+  **Model Evaluation**
+  
+  • Mean Squared Error (MSE)
+  
+  • Mean Absolute Error (MAE)
+  
+  • R² Score
+  
+  **Model Saving**
 
-Weekend (0/1)
+  • Models saved using Joblib for future use
 
-Holiday (0/1)
+**📈 Results**
+| Model                   | R² Score | MSE   | MAE  |
+| ----------------------- | -------- | ----- | ---- |
+| SVM Regressor           | 0.58     | 89.83 | 7.31 |
+| Random Forest Regressor | 0.93     | 15.00 | 2.84 |
 
-TotalUsage (Target Variable)
-
-Target Variable: Total Energy Consumption
-
-⚙️ Project Workflow
-
-Data Preprocessing
-
-Handling missing values
-
-Outlier treatment using Winsorization
-
-Feature scaling using StandardScaler
-
-Feature selection using SelectKBest
-
-Model Building
-
-Support Vector Regressor (SVR)
-
-Random Forest Regressor
-
-Model Evaluation
-
-Mean Squared Error (MSE)
-
-Mean Absolute Error (MAE)
-
-R² Score
-
-Model Saving
-
-Models saved using Joblib for future use
-
-📈 Results
-Model	R² Score	MSE	MAE
-SVM Regressor	0.58	89.83	7.31
-Random Forest Regressor	0.93	15.00	2.84
