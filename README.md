@@ -1,17 +1,87 @@
-# Energy-Consumption
-Machine Learning-Based Energy Consumption Forecasting in Smart Grids
-• Developed a machine learning-based energy consumption forecasting system for smart grid environments.
+**Machine Learning-Based Energy Consumption Forecasting in Smart Grids**
 
-• Performed data preprocessing including missing value handling, outlier treatment (Winsorization), feature scaling, and label encoding.
+This project focuses on predicting energy consumption in smart grid environments using Machine Learning techniques.
+The goal is to build accurate regression models that can forecast total energy usage based on environmental and temporal features such as temperature, humidity, date, time, weekend, and holidays.
 
-• Implemented feature selection using SelectKBest (ANOVA F-test) to improve model performance.
+Accurate forecasting helps in:
 
-• Built and compared regression models including Support Vector Regressor (SVR) and Random Forest Regressor.
+Load balancing
 
-• Evaluated models using performance metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), and R² Score.
+Energy optimization
 
-• Achieved R² score of 93% using Random Forest Regressor, significantly outperforming SVM (58%).
+Renewable energy integration
 
-• Automated model saving and loading using Joblib for deployment readiness.
+Cost reduction
 
-• Designed visualization dashboards using Matplotlib and Seaborn for regression analysis.
+🛠️ Technologies Used
+
+Python
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+Matplotlib
+
+Seaborn
+
+Feature Engine (Winsorizer)
+
+Joblib
+
+📊 Dataset Description
+
+The dataset contains the following features:
+
+DateTime
+
+Temperature (°F)
+
+Humidity
+
+Hour, Minute, Day, Month, Year
+
+Weekend (0/1)
+
+Holiday (0/1)
+
+TotalUsage (Target Variable)
+
+Target Variable: Total Energy Consumption
+
+⚙️ Project Workflow
+
+Data Preprocessing
+
+Handling missing values
+
+Outlier treatment using Winsorization
+
+Feature scaling using StandardScaler
+
+Feature selection using SelectKBest
+
+Model Building
+
+Support Vector Regressor (SVR)
+
+Random Forest Regressor
+
+Model Evaluation
+
+Mean Squared Error (MSE)
+
+Mean Absolute Error (MAE)
+
+R² Score
+
+Model Saving
+
+Models saved using Joblib for future use
+
+📈 Results
+Model	R² Score	MSE	MAE
+SVM Regressor	0.58	89.83	7.31
+Random Forest Regressor	0.93	15.00	2.84
